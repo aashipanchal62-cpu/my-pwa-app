@@ -1,0 +1,72 @@
+﻿/* STUDYVERSE – Auth Screen Styles */
+.auth-layer {
+  position: fixed;
+  inset: 0;
+  background: var(--gradient-primary, linear-gradient(135deg,#6C63FF,#FF6584));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+.auth-box {
+  background: var(--bg-surface, #fff);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  animation: fadeInUp 0.4s ease;
+}
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.auth-logo {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.auth-logo-icon { font-size: 48px; display: block; margin-bottom: 8px; }
+.auth-logo-name { font-size: 24px; font-weight: 800; color: var(--brand-primary,#6C63FF); letter-spacing: -0.5px; }
+.auth-logo-sub  { font-size: 13px; color: var(--text-secondary,#666); margin-top: 4px; }
+.auth-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--border-light,#eee);
+  margin-bottom: 24px;
+}
+.auth-tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.auth-tab.active {
+  color: var(--brand-primary,#6C63FF);
+  border-bottom-color: var(--brand-primary,#6C63FF);
+}
+.auth-error {
+  background: #FEE2E2;
+  border: 1px solid #FECACA;
+  color: #DC2626;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.auth-privacy-note {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 20px;
+  line-height: 1.5;
+}

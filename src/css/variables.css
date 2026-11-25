@@ -1,0 +1,151 @@
+/* =====================================================
+   STUDYVERSE – CSS Custom Properties (Variables)
+   Theme: Light (default) | Dark handled in dark.css
+   ===================================================== */
+
+:root {
+  /* ── Brand Palette ── */
+  --brand-primary: #6C63FF;
+  --brand-primary-hover: #5A52E8;
+  --brand-primary-light: #EEF0FF;
+  --brand-secondary: #FF6584;
+  --brand-accent: #43CBFF;
+  --brand-success: #22C55E;
+  --brand-warning: #F59E0B;
+  --brand-danger: #EF4444;
+  --brand-info: #3B82F6;
+
+  /* ── Gradient ── */
+  --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #9B8FFF 100%);
+  --gradient-secondary: linear-gradient(135deg, #FF6584 0%, #FFB347 100%);
+  --gradient-success: linear-gradient(135deg, #22C55E 0%, #86EFAC 100%);
+  --gradient-info: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+  --gradient-dark: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%);
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* ── Background Colors ── */
+  --bg-app: #F8F9FE;
+  --bg-surface: #FFFFFF;
+  --bg-surface-2: #F3F4F6;
+  --bg-surface-3: #E9ECEF;
+  --bg-sidebar: #FFFFFF;
+  --bg-topbar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F5F5FF;
+  --bg-active: #EEF0FF;
+  --bg-modal: rgba(0, 0, 0, 0.5);
+  --bg-overlay: rgba(255, 255, 255, 0.95);
+
+  /* ── Text Colors ── */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --text-muted: #CBD5E1;
+  --text-inverse: #FFFFFF;
+  --text-link: #6C63FF;
+  --text-heading: #0F172A;
+
+  /* ── Border Colors ── */
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+  --border-dark: #94A3B8;
+  --border-primary: #6C63FF;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --border-radius-full: 9999px;
+
+  /* ── Subject Colors ── */
+  --subject-fr: #6C63FF;
+  --subject-afm: #3B82F6;
+  --subject-audit: #22C55E;
+  --subject-dt: #F59E0B;
+  --subject-idt: #EF4444;
+  --subject-ibs: #EC4899;
+  --subject-fr-bg: #EEF0FF;
+  --subject-afm-bg: #EFF6FF;
+  --subject-audit-bg: #F0FDF4;
+  --subject-dt-bg: #FFFBEB;
+  --subject-idt-bg: #FEF2F2;
+  --subject-ibs-bg: #FDF2F8;
+
+  /* ── Status Colors ── */
+  --status-not-started: #94A3B8;
+  --status-in-progress: #3B82F6;
+  --status-completed: #22C55E;
+  --status-needs-revision: #F59E0B;
+  --status-difficult: #EF4444;
+  --status-on-hold: #8B5CF6;
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.16);
+  --shadow-primary: 0 4px 16px rgba(108, 99, 255, 0.3);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  /* ── Spacing ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Layout ── */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 68px;
+  --topbar-height: 64px;
+  --content-max-width: 1400px;
+  --card-padding: 24px;
+
+  /* ── Typography ── */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 24px;
+  --text-4xl: 30px;
+  --text-5xl: 36px;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index ── */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-sidebar: 300;
+  --z-topbar: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-splash: 9999;
+}
